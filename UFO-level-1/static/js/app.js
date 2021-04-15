@@ -7,6 +7,7 @@ function handleChange(event) {
     // grab the value of the input field
     var inputText = d3.event.target.value;
     var tbody = d3.select("tbody");
+    //clear table
     tbody.html("");
     data.forEach(function(weatherReport) {
         console.log(weatherReport.datetime);
@@ -26,5 +27,3 @@ function handleChange(event) {
   }
   var text = d3.select("#datetime");
   text.on("change", handleChange);
-// Step 5: Use d3 to update each cell's text with
-// weather report values (weekday, date, high, low)
