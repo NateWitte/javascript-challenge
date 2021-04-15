@@ -20,7 +20,7 @@ function handleChange(event) {
     if (inputState){
       filtereddata=filtereddata.filter(sighting => sighting.state === inputState);
     };
-    if (inputState){
+    if (inputCountry){
       filtereddata=filtereddata.filter(sighting => sighting.country === inputCountry);
     };
     if (inputShape){
